@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="اسأل مساعد منصة ذكاء الطالب عن الجامعات والتخصصات والمواد الدراسية في عُمان.">
+  <title>المساعد الذكي | منصة ذكاء الطالب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/universities.css"><link rel="stylesheet" href="css/assistant.css">
+  <script defer src="js/data.js"></script><script defer src="js/assistant-answer.js"></script><script defer src="js/assistant.js"></script><script defer src="js/layout.js"></script>
+</head>
+<body><div data-site-header></div><main class="container assistant-page">
+  <nav class="breadcrumbs" aria-label="مسار الصفحة"><a href="index.html">الرئيسية</a><span aria-hidden="true">/</span><span aria-current="page">المساعد الذكي</span></nav>
+  <header class="assistant-heading"><span class="assistant-avatar" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4m0-12.8L17 7M7 17l-1.4 1.4"></path><rect x="6" y="7" width="12" height="11" rx="4"></rect><path d="M9.5 12h.01M14.5 12h.01M10 15h4"></path></svg></span><div><p class="eyebrow">إجابات أكاديمية من بيانات المنصة</p><h1>اسأل المساعد الذكي</h1><p>اسأل عن التخصصات والمواد، وستجد إجابة إرشادية مع مصادرها.</p></div></header>
+  <section class="chat-shell" aria-label="محادثة المساعد">
+    <div class="chat-messages" id="chat-messages" aria-live="polite" aria-relevant="additions">
+      <article class="chat-message chat-message--assistant"><span class="chat-message__avatar" aria-hidden="true">ذ</span><div class="chat-message__body"><p>مرحباً! أستطيع مساعدتك في استكشاف التخصصات والمواد ومقارنة الخيارات. جرّب أحد الأسئلة المقترحة أو اكتب سؤالك.</p><div class="message-sources" hidden></div></div></article>
+    </div>
+    <div class="suggested-questions" aria-label="أسئلة مقترحة"><p>أسئلة مقترحة</p><div><button type="button">هل تخصص الهندسة مناسب لشخص ما يحب الرياضيات؟</button><button type="button">ما المواد اللي أحتاج أخلصها قبل مادة معينة؟</button><button type="button">قارن لي بين تخصص إدارة الأعمال في جامعتين</button></div></div>
+    <form class="chat-composer" id="assistant-form"><label class="sr-only" for="assistant-input">اكتب سؤالك</label><textarea id="assistant-input" name="question" rows="1" maxlength="500" placeholder="اكتب سؤالك هنا..." required></textarea><button class="button button--primary" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 16-8-5 16-3-7-8-1Zm8 1 8-9"></path></svg><span>أرسل السؤال</span></button></form>
+    <p class="assistant-disclaimer">الإجابات آلية وإرشادية وتعتمد على بيانات تجريبية؛ تحقق من تفاصيل القبول والخطط لدى الجامعة.</p>
+  </section>
+</main><div data-site-footer></div></body></html>

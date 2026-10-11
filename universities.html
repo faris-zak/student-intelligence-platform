@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ابحث عن الجامعات والكليات والبرامج الدراسية في سلطنة عُمان.">
+  <title>الجامعات في عُمان | منصة ذكاء الطالب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/universities.css">
+  <script defer src="js/data.js"></script><script defer src="js/universities.js"></script><script defer src="js/layout.js"></script>
+</head>
+<body><div data-site-header></div><main class="directory-page container">
+  <nav class="breadcrumbs" aria-label="مسار الصفحة"><a href="index.html">الرئيسية</a><span aria-hidden="true">/</span><span aria-current="page">الجامعات</span></nav>
+  <header class="directory-heading"><div><p class="eyebrow">دليلك الأكاديمي</p><h1>الجامعات في سلطنة عُمان</h1><p>اكتشف المؤسسات التعليمية والكليات والبرامج، وقارن الخيارات التي تناسب أهدافك.</p></div><span class="result-count" id="university-count" aria-live="polite"></span></header>
+  <form class="filter-bar" id="university-filters" role="search">
+    <label class="filter-search"><span class="sr-only">ابحث باسم الجامعة أو الموقع</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg><input type="search" name="q" placeholder="ابحث باسم الجامعة أو الموقع"></label>
+    <label><span class="sr-only">نوع المؤسسة</span><select name="type"><option value="all">كل المؤسسات</option><option value="حكومية">حكومية</option><option value="أهلية">أهلية</option></select></label>
+    <button class="button button--outline" type="reset">مسح البحث</button>
+  </form>
+  <div class="directory-grid" id="university-results" aria-live="polite"></div>
+  <p class="empty-state" id="university-empty" hidden>لم نعثر على جامعة تطابق بحثك. جرّب كلمة أخرى.</p>
+</main><div data-site-footer></div></body></html>

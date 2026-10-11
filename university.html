@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تفاصيل الجامعات والكليات والبرامج في سلطنة عُمان.">
+  <title>تفاصيل الجامعة | منصة ذكاء الطالب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/universities.css">
+  <script defer src="js/data.js"></script><script defer src="js/university.js"></script><script defer src="js/layout.js"></script>
+</head>
+<body><div data-site-header></div><main class="container university-detail" id="university-detail">
+  <nav class="breadcrumbs" aria-label="مسار الصفحة"><a href="index.html">الرئيسية</a><span aria-hidden="true">/</span><a href="universities.html">الجامعات</a><span aria-hidden="true">/</span><span aria-current="page">تفاصيل الجامعة</span></nav>
+  <section class="university-hero" id="university-hero" aria-labelledby="university-name"><div class="university-hero__image" id="university-cover"></div><div class="university-hero__content"><span class="institution-type" id="university-type"></span><h1 id="university-name">تفاصيل الجامعة</h1><p id="university-location"></p><p id="university-tagline"></p><a class="button button--primary" href="#colleges">تعرّف على الكليات <span aria-hidden="true">↓</span></a></div><div class="university-hero__badge" id="university-badge"><img id="university-logo" alt=""></div></section>
+  <div class="university-stats" id="university-stats"></div>
+  <div class="detail-columns">
+    <section class="content-card about-card" aria-labelledby="about-title"><p class="section-label">نبذة</p><h2 id="about-title">عن الجامعة</h2><p id="university-about"></p><p class="data-note">هذه معلومات تعريفية أولية، وقد تختلف التفاصيل باختلاف البرنامج والسنة الأكاديمية. راجع الجهة الرسمية قبل التقديم.</p></section>
+    <section class="content-card" aria-labelledby="admission-title"><p class="section-label">معلومات رسمية</p><h2 id="admission-title">متطلبات القبول</h2><ul class="check-list" id="admission-list"></ul></section>
+  </div>
+  <section class="content-card university-facts" aria-label="مدة الدراسة والرسوم"><div><span class="fact-icon" aria-hidden="true">◷</span><p class="section-label">مدة الدراسة</p><strong id="university-duration"></strong></div><div><span class="fact-icon fact-icon--gold" aria-hidden="true">ر.ع</span><p class="section-label">الرسوم الدراسية</p><strong id="university-fees"></strong></div></section>
+  <section class="college-section" id="colleges" aria-labelledby="colleges-title"><div class="section-heading"><div><p class="eyebrow">من التخصصات إلى المسارات</p><h2 id="colleges-title">الكليات والبرامج</h2><p>تعرّف على الكليات والتخصصات المتاحة في الجامعة.</p></div></div><div class="college-grid" id="college-list"></div></section>
+  <div class="not-found content-card" id="university-not-found" hidden><h1>لم نعثر على هذه الجامعة</h1><p>قد يكون الرابط غير صحيح أو أن الجامعة غير متاحة في الدليل حالياً.</p><a class="button button--primary" href="universities.html">العودة إلى قائمة الجامعات</a></div>
+</main><div data-site-footer></div></body></html>

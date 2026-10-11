@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="منصة ذكاء الطالب تجمع معلومات الجامعات والتخصصات والمواد الدراسية في سلطنة عُمان.">
+  <title>منصة ذكاء الطالب | من البحث عن المعلومة إلى اتخاذ القرار</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/roadmap.css">
+  <script defer src="js/data.js"></script>
+  <script defer src="js/home.js"></script>
+  <script defer src="js/layout.js"></script>
+</head>
+<body>
+  <div data-site-header></div>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__veil"></div>
+      <div class="container hero__content">
+        <p class="eyebrow hero__eyebrow">رحلتك الأكاديمية تبدأ من هنا</p>
+        <h1 id="hero-title">كل ما تحتاجه عن دراستك<br><span>في مكان واحد</span></h1>
+        <p class="hero__copy">منصة ذكية تجمع معلومات الجامعات والكليات والتخصصات والمواد الدراسية في عُمان، مع تجارب الطلاب والمساعد الذكي لمساعدتك على اتخاذ القرار الأفضل.</p>
+        <form class="search-panel" id="study-search" role="search">
+          <label class="search-panel__query"><span class="sr-only">ابحث عن جامعة أو تخصص أو مادة</span><input type="search" name="q" placeholder="ابحث عن جامعة، تخصص، مادة دراسية..." autocomplete="off"></label>
+          <label class="search-panel__select"><span class="sr-only">الجامعة</span><select name="university"><option value="">الجامعة</option><option value="squ">جامعة السلطان قابوس</option><option value="utas">جامعة التقنية والعلوم التطبيقية</option><option value="nizwa">جامعة نزوى</option><option value="muscat">جامعة مسقط</option><option value="buraimi">جامعة البريمي</option></select></label>
+          <label class="search-panel__select"><span class="sr-only">الكلية</span><select name="college" disabled><option value="">الكلية</option></select></label>
+          <label class="search-panel__select"><span class="sr-only">التخصص</span><select name="major" disabled><option value="">التخصص</option></select></label>
+          <label class="search-panel__select"><span class="sr-only">المادة</span><select name="course" disabled><option value="">المادة</option></select></label>
+          <button class="search-panel__submit" type="submit" aria-label="بحث"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg><span>ابحث</span></button>
+        </form>
+        <p class="hero__hint">اكتشف خياراتك الدراسية بثقة ووضوح</p>
+      </div>
+      <a class="scroll-cue" href="#discover" aria-label="انتقل إلى اكتشف المنصة"><span></span></a>
+    </section>
+
+    <section class="features container" id="discover" aria-label="خدمات المنصة">
+      <a class="feature-card" href="universities.html"><span class="feature-icon feature-icon--blue"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5 12 4l9 5.5M5 10v9m4-9v9m6-9v9m4-9v9M3 20h18M2 9.5h20"></path></svg></span><strong>اكتشف الجامعات</strong><span>اطّلع على الكليات والبرامج في سلطنة عُمان.</span></a>
+      <a class="feature-card" href="majors.html"><span class="feature-icon feature-icon--teal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5c3-1.5 6-1.5 9 0v13c-3-1.5-6-1.5-9 0zm18 0c-3-1.5-6-1.5-9 0v13c3-1.5 6-1.5 9 0z"></path></svg></span><strong>اكتشف التخصصات</strong><span>تعرّف على مجالات الدراسة ومساراتها.</span></a>
+      <a class="feature-card" href="courses.html"><span class="feature-icon feature-icon--amber"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5h14v17H5zM8 8h8M8 12h8m-8 4h5"></path></svg></span><strong>تفاصيل المواد</strong><span>اعرف طبيعة المادة ومتطلباتها مسبقاً.</span></a>
+      <a class="feature-card" href="courses.html"><span class="feature-icon feature-icon--violet"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M3 20v-1.5a6 6 0 0 1 12 0V20zm13-5a4.5 4.5 0 0 1 5 4.5v.5h-4"></path></svg></span><strong>تجارب الطلاب</strong><span>تعرّف على طبيعة المواد من تجارب الطلبة.</span></a>
+      <a class="feature-card" href="compare.html"><span class="feature-icon feature-icon--green"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v17m-7-14h14M7 6 3.5 13h7L7 6zm10 0-3.5 7h7L17 6zM8 21h8"></path></svg></span><strong>قارن قبل ما تقرر</strong><span>وازن بين الجامعات والتخصصات بسهولة.</span></a>
+      <a class="feature-card" href="assistant.html"><span class="feature-icon feature-icon--rose"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4m0-12.8L17 7M7 17l-1.4 1.4"></path><rect x="6" y="7" width="12" height="11" rx="4"></rect><path d="M9.5 12h.01M14.5 12h.01M10 15h4"></path></svg></span><strong>اسأل المساعد الذكي</strong><span>احصل على إجابات تناسب خطتك الدراسية.</span></a>
+    </section>
+
+    <section class="universities-section container" aria-labelledby="universities-title">
+      <div class="section-heading"><div><p class="eyebrow">خياراتك في عُمان</p><h2 id="universities-title">أبرز الجامعات في سلطنة عُمان</h2><p>ابدأ بالتعرّف على المؤسسات التعليمية وبرامجها.</p></div><a class="text-link" href="universities.html">عرض الكل <span aria-hidden="true">←</span></a></div>
+      <div class="university-grid">
+        <article class="university-card"><a href="university.html?slug=squ" class="university-card__cover university-card__cover--squ" aria-label="استعرض جامعة السلطان قابوس"><span class="university-card__seal"><img src="assets/universities/squ/logo.png" alt="شعار جامعة السلطان قابوس" loading="lazy"></span></a><div class="university-card__body"><p class="university-card__location">مسقط · الخوض</p><h3>جامعة السلطان قابوس</h3><p class="university-card__tagline">صرح أكاديمي رائد في سلطنة عُمان</p><div class="university-card__meta"><span>١٠ كليات</span><span>برامج متنوعة</span></div><a class="button button--outline button--small" href="university.html?slug=squ">استعرض الجامعة <span aria-hidden="true">←</span></a></div></article>
+        <article class="university-card"><a href="university.html?slug=utas" class="university-card__cover university-card__cover--utas" aria-label="استعرض جامعة التقنية والعلوم التطبيقية"><span class="university-card__seal"><img src="assets/universities/utas/logo.jpg" alt="شعار جامعة التقنية والعلوم التطبيقية" loading="lazy"></span></a><div class="university-card__body"><p class="university-card__location">فروع في مختلف المحافظات</p><h3>جامعة التقنية والعلوم التطبيقية</h3><p class="university-card__tagline">تعليم تطبيقي لمستقبل أفضل</p><div class="university-card__meta"><span>١١ فرعاً</span><span>تخصصات تقنية</span></div><a class="button button--outline button--small" href="university.html?slug=utas">استعرض الجامعة <span aria-hidden="true">←</span></a></div></article>
+        <article class="university-card"><a href="university.html?slug=nizwa" class="university-card__cover university-card__cover--nizwa" aria-label="استعرض جامعة نزوى"><span class="university-card__seal"><img src="assets/universities/nizwa/logo.jpg" alt="شعار جامعة نزوى" loading="lazy"></span></a><div class="university-card__body"><p class="university-card__location">الداخلية · بركة الموز</p><h3>جامعة نزوى</h3><p class="university-card__tagline">تعليم متميز وبناء للمستقبل</p><div class="university-card__meta"><span>٤ كليات</span><span>برامج أكاديمية</span></div><a class="button button--outline button--small" href="university.html?slug=nizwa">استعرض الجامعة <span aria-hidden="true">←</span></a></div></article>
+        <article class="university-card"><a href="university.html?slug=muscat" class="university-card__cover university-card__cover--muscat" aria-label="استعرض جامعة مسقط"><span class="university-card__seal"><img src="assets/universities/muscat/logo.png" alt="شعار جامعة مسقط" loading="lazy"></span></a><div class="university-card__body"><p class="university-card__location">مسقط</p><h3>جامعة مسقط</h3><p class="university-card__tagline">تعليم بمعايير عالمية</p><div class="university-card__meta"><span>برامج معتمدة</span><span>بيئة دولية</span></div><a class="button button--outline button--small" href="university.html?slug=muscat">استعرض الجامعة <span aria-hidden="true">←</span></a></div></article>
+      </div>
+    </section>
+    <section class="roadmap-section container" aria-labelledby="roadmap-title">
+      <div class="roadmap-copy"><p class="eyebrow">الرؤية المستقبلية</p><h2 id="roadmap-title">نبدأ من عُمان، ونتوسع مع احتياج الطالب</h2><p>تركيزنا اليوم على الجامعات والكليات في سلطنة عُمان. ومع تطور المنصة يمكن أن تمتد لتصبح دليلاً تعليمياً يخدم طلاباً أكثر في المنطقة.</p></div>
+      <ol class="roadmap-steps" aria-label="مراحل التوسع المقترحة"><li class="roadmap-step roadmap-step--current"><span>١</span><strong>الجامعات والكليات</strong><small>المرحلة الحالية</small></li><li class="roadmap-step"><span>٢</span><strong>المدارس الخاصة</strong><small>توسع مستقبلي</small></li><li class="roadmap-step"><span>٣</span><strong>المعاهد</strong><small>توسع مستقبلي</small></li><li class="roadmap-step"><span>٤</span><strong>دول الخليج</strong><small>توسع مستقبلي</small></li><li class="roadmap-step"><span>٥</span><strong>المنطقة العربية</strong><small>رؤية بعيدة المدى</small></li></ol>
+    </section>
+    <section class="decision-banner container"><div><p class="eyebrow">قرارك يستحق الوضوح</p><h2>خطوتك القادمة تبدأ بسؤال</h2><p>استخدم المساعد الذكي للعثور على المعلومات التي تحتاجها.</p></div><a class="button button--primary" href="assistant.html">اسأل المساعد الذكي <span aria-hidden="true">←</span></a></section>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

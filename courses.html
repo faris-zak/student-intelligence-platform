@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ابحث عن المواد الدراسية الجامعية وتعرّف على متطلباتها وطبيعتها.">
+  <title>المواد الدراسية | منصة ذكاء الطالب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/universities.css"><link rel="stylesheet" href="css/academics.css">
+  <script defer src="js/data.js"></script><script defer src="js/courses.js"></script><script defer src="js/layout.js"></script>
+</head>
+<body><div data-site-header></div><main class="directory-page container">
+  <nav class="breadcrumbs" aria-label="مسار الصفحة"><a href="index.html">الرئيسية</a><span aria-hidden="true">/</span><span aria-current="page">المواد الدراسية</span></nav>
+  <header class="directory-heading"><div><p class="eyebrow">اعرف المادة قبل ما تسجلها</p><h1>دليل المواد الدراسية</h1><p>ابحث عن مادة واعرف ساعاتها ومتطلباتها وطبيعة التقييم فيها.</p></div><span class="result-count" id="course-count" aria-live="polite"></span></header>
+  <form class="filter-bar" id="course-filters" role="search"><label class="filter-search"><span class="sr-only">ابحث عن مادة دراسية</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg><input type="search" name="q" placeholder="ابحث باسم المادة أو التخصص"></label><label><span class="sr-only">طبيعة المادة</span><select name="nature"><option value="all">كل أنواع المواد</option><option>نظرية</option><option>تطبيقية</option><option>نظرية + تطبيقية</option></select></label><button class="button button--outline" type="reset">مسح البحث</button></form>
+  <div class="course-list" id="course-results" aria-live="polite"></div><p class="empty-state" id="course-empty" hidden>لم نعثر على مادة تطابق بحثك. جرّب كلمة أخرى.</p>
+</main><div data-site-footer></div></body></html>

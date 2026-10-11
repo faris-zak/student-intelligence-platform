@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="قارن بين جامعتين أو تخصصين دراسيين في سلطنة عُمان قبل اتخاذ قرارك.">
+  <title>قارن خياراتك | منصة ذكاء الطالب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/universities.css"><link rel="stylesheet" href="css/compare.css">
+  <script defer src="js/data.js"></script><script defer src="js/compare.js"></script><script defer src="js/layout.js"></script>
+</head>
+<body><div data-site-header></div><main class="container compare-page">
+  <nav class="breadcrumbs" aria-label="مسار الصفحة"><a href="index.html">الرئيسية</a><span aria-hidden="true">/</span><span aria-current="page">قارن الخيارات</span></nav>
+  <header class="compare-intro"><p class="eyebrow">قرارك يبدأ بمقارنة واضحة</p><h1>قارن قبل ما تقرر</h1><p>وازن بين جامعتين أو تخصصين، وشاهد أهم التفاصيل في جدول واحد.</p></header>
+  <section class="compare-controls content-card" aria-labelledby="compare-controls-title">
+    <h2 id="compare-controls-title">ما الذي تريد مقارنته؟</h2>
+    <fieldset class="compare-mode"><legend class="sr-only">نوع المقارنة</legend><label><input type="radio" name="compare-type" value="university" checked><span>جامعتان</span></label><label><input type="radio" name="compare-type" value="major"><span>تخصصان</span></label></fieldset>
+    <div class="compare-selects"><label><span id="first-select-label">الجامعة الأولى</span><select id="first-choice"><option value="">اختر الجامعة الأولى</option></select></label><span class="compare-versus" aria-hidden="true">مقابل</span><label><span id="second-select-label">الجامعة الثانية</span><select id="second-choice"><option value="">اختر الجامعة الثانية</option></select></label></div>
+    <p class="compare-hint" id="compare-hint" aria-live="polite">اختر خيارين لعرض المقارنة.</p>
+  </section>
+  <section class="comparison-result" id="comparison-result" aria-labelledby="comparison-title" hidden>
+    <div class="comparison-title"><div><p class="eyebrow">مقارنة جنباً إلى جنب</p><h2 id="comparison-title">النتيجة</h2></div><button type="button" class="button button--outline button--small" id="clear-comparison">مسح الاختيارات</button></div>
+    <div class="comparison-table-wrap"><table class="comparison-table"><caption class="sr-only">جدول مقارنة بين الخيارين المختارين</caption><thead id="comparison-head"></thead><tbody id="comparison-body"></tbody></table></div>
+    <p class="compare-footnote">المقارنة إرشادية وتعتمد على بيانات تجريبية في هذا النموذج. تحقق من الخطط والرسوم الحالية لدى المؤسسة التعليمية.</p>
+  </section>
+</main><div data-site-footer></div></body></html>
